@@ -1,0 +1,81 @@
+Truncate Table Audit
+Truncate Table tbl_DocumentManagementSystem
+Truncate Table tblContract_Collaborator_Details
+Truncate Table tblContract_Collobrator_Master
+
+
+
+Truncate Table tblContract_Master
+Truncate Table tblContract_Status_Date
+Truncate Table tblContractDetails_MultipleContractFile
+Truncate Table tblCRA_Master
+Truncate Table tblCRO_Master
+Truncate Table tblDataOwner_Mapping
+Truncate Table tblDrug_Master
+Truncate Table tblEthics_Dept_PI
+Truncate Table tblEthics_Details
+
+Truncate Table tblFeasibility_CRO_Details
+Truncate Table tblFeasibility_Dept_PI
+Truncate Table tblFeasibility_Details
+Truncate Table tblFeasibility_Sponsor_Details
+Truncate Table tblGrant_Budget_Allocation_Details
+Truncate Table tblGrant_Details
+
+Truncate Table tblGrantExtensionDetails
+Truncate Table tblOther_PI_Master
+Truncate Table tblOtherProject_Dept_PI
+
+Truncate Table tblProject_Coordinator_Details
+Truncate Table tblProject_Dept_PI
+
+Truncate Table tblRegulatory_Ammendments_Details
+Truncate Table tblRegulatory_ICF_Details
+
+Truncate Table tblRegulatory_StudyTeam
+Truncate Table tblRegulatory_Submission_Status
+Truncate Table tblRegulatoryIPManagement
+Truncate Table tblRegulatorySixMonthUpdate
+Truncate Table tblSelected_Clause_Details
+Truncate Table tblSelected_CRA_Details
+Truncate Table tblSelected_Project_Details
+Truncate Table tblSelected_Project_StudyBudgetFile
+Truncate Table tblSelectedCollborators_Details
+Truncate Table tblSelectedProject_BU_Details
+Truncate Table tblSelectedProject_MonthlyID
+Truncate Table tblSenior_CSCS_Budget_Allocation_Details
+
+Truncate Table tblSeniorCSCS_Dept_PI_Details
+Truncate Table tblSponsor_Master
+Truncate Table tempSelData
+Truncate Table tempSelectedDetails
+Truncate Table TestReport
+Truncate Table TestUser
+Truncate Table TestUserContact
+Truncate Table TestUserContactMapping
+
+
+
+
+DELETE FROM tblContract_Details
+DELETE FROM tblFactors_Master
+DELETE FROM tblGrant_Master
+DELETE FROM tblPI_Master
+DELETE FROM tblProject_Master
+DELETE FROM tblRegulatory_Master
+DELETE FROM tblSenior_CSCS_Details
+
+
+
+DBCC CHECKIDENT ('tblContract_Details', RESEED, 0);
+
+
+DBCC CHECKIDENT ('tblGrant_Master', RESEED, 0);
+
+DBCC CHECKIDENT ('tblPI_Master', RESEED, 0);
+
+DBCC CHECKIDENT ('tblProject_Master', RESEED, 0);
+
+DBCC CHECKIDENT ('tblRegulatory_Master', RESEED, 0);
+
+DBCC CHECKIDENT ('tblSenior_CSCS_Details', RESEED, 0);
